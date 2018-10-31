@@ -29,6 +29,11 @@
     <groupId>com.robomwm</groupId>
     <artifactId>SampleJarProgram</artifactId>
     <version>1.0</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <!-- Here's where you put the dependencies your program uses
     Most open source projects are in sonatype, so you don't need to add the maven repo
@@ -59,7 +64,7 @@
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                             <!-- Specify the main class (the class with the static void main(String[] args) method)-->
-                            <mainClass>com.robomwm.samplejarprogram.Main</mainClass>
+                            <mainClass>me.dlohmann.lab7jdbc.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
